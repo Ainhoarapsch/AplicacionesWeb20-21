@@ -1,0 +1,85 @@
+body{
+    height: 100%;
+    background-image: url("https://www.hazunaweb.com/imagenes/los-8-mejores-libros-de-html.jpg");
+    font-family: 'Times New Roman', Times, serif;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+
+}
+.contact_form{
+    width: 460px;
+    height: auto;
+    margin: 80px auto;
+    border-radius: 10px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    background-color: #5f9bd3;
+}
+input{
+    background-color: #ffffff;
+    height: 40px;
+    width: 408px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+}
+label{
+    display: block;
+    float: center;
+}
+textarea{
+    background-color: #ffffff;
+    width: 405px;
+    height: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-left: 5px;
+}
+
+textarea:focus{
+    outline:0;
+    border: 3px solid rgb(212, 16, 16);
+}
+button{
+    width: 420px;
+    border-radius: 10px;
+    border-style: solid;
+    border: 1px solid ;
+    height: 45px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    transition: 0.5s ease-in;
+}
+button:hover{
+    height: 50px;
+    border: 2px solid grey;
+    background-color: burlywood;
+}
+.contact_form input:required:valid, .contact_form textarea:required:valid {
+	background: #fff url(valid.jpg) no-repeat 98% center;
+    box-shadow: 0 0 20px #5cd053;
+	border-color: #28921f;
+    position: relative;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 3px 10px;
+    padding-left: 20px;
+  
+}
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid { 
+	background: #fff url(invalid.png) no-repeat 98% center;
+	box-shadow: 0 0 20px #d45252;
+	border-color: #b03535;
+    position: relative;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: 3px 10px;
+    padding-left: 23px;
+}
